@@ -100,7 +100,7 @@ function pullcard(playernum) {
 
 //hit button
 function hit() {
-//player takes a hit
+//player takes a hit and hides dd since you cant dd after a hit
   pullcard(1);
   document.getElementById("ddbutton").style.visibility = "hidden";
 //check for bust
@@ -112,7 +112,7 @@ function hit() {
 
 //stand button
 function stand() {
-//resets for next bet (hide gameplay reveal bet buttons)
+//resets for next bet (hide gameplay buttons reveal bet buttons)
   document.getElementById("ddbutton").style.visibility = "hidden";
   document.getElementById("stbutton").style.visibility = "hidden";
   document.getElementById("htbutton").style.visibility = "hidden";
@@ -126,14 +126,18 @@ function stand() {
 //checks score and sees who wins
   var playerend = calcscore(playercards);
   var dealerend = calcscore(dealercards);
+//if player busts
   if (playerend > 21) {
     document.getElementById("message").innerHTML = "YOU BUSTED!";
+//if dealer busts or player > dealer 
   } else if (dealerend > 21 || playerend > dealerend) {
     document.getElementById("message").innerHTML = "YOU WIN! $" + 2 * bet;
     money += 2 * bet;
+//if tied
   } else if (dealerend == playerend) {
     document.getElementById("message").innerHTML = "PUSH! $" + bet;
     money += bet;
+//else dealer wins 
   } else {
     document.getElementById("message").innerHTML = "DEALER WINS!";
   }

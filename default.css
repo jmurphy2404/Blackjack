@@ -15,3 +15,20 @@
 #ddbutton {
   visibility: hidden;
 }
+
+h1{
+	font-style: italic;
+	font-size: 3em;
+	margin: 5px;
+}
+
+#playermoney {
+	font-size: 2em;
+}
+
+#dealercards, #playercards{
+	font-size: 3em;
+}
+#message{
+	font-size: 2em;
+}
