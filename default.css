@@ -1,0 +1,17 @@
+* {
+	font-family: monospace;
+	background-color: green;
+	color: white;
+}
+
+#htbutton {
+  visibility: hidden;
+}
+
+#stbutton {
+  visibility: hidden;
+}
+
+#ddbutton {
+  visibility: hidden;
+}
