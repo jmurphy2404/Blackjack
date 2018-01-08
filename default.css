@@ -1,18 +1,18 @@
-* {
+*{
 	font-family: monospace;
 	background-color: green;
 	color: white;
 }
 
-#htbutton {
+#htbutton{
   visibility: hidden;
 }
 
-#stbutton {
+#stbutton{
   visibility: hidden;
 }
 
-#ddbutton {
+#ddbutton{
   visibility: hidden;
 }
 
@@ -22,13 +22,20 @@ h1{
 	margin: 5px;
 }
 
-#playermoney {
+#playermoney{
 	font-size: 2em;
 }
 
 #dealercards, #playercards{
 	font-size: 3em;
 }
+
 #message{
 	font-size: 2em;
+}
+
+#gamespace{
+	margin: 0 auto;
+	display: block;
+	width: 600px;
 }

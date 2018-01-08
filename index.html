@@ -5,36 +5,38 @@
 		<link rel="stylesheet" href="default.css"/>
 	</head>
 	<body>
-		<h1>Blackjack</h1>
-		<button class="debutton" id="bet1">Bet $1</button>
-		<button class="debutton" id="bet5">Bet $5</button>
-		<button class="debutton" id="bet10">Bet $10</button>
-		<button class="debutton" id="bet20">Bet $20</button></br>
-		<div id="playermoney">
-			$100
+		<div id="gamespace">
+			<h1>Blackjack</h1>
+			<button class="debutton" id="bet1">Bet $1</button>
+			<button class="debutton" id="bet5">Bet $5</button>
+			<button class="debutton" id="bet10">Bet $10</button>
+			<button class="debutton" id="bet20">Bet $20</button></br>
+			<div id="playermoney">
+				$100
+			</div>
+			DEALER'S CARDS:
+			<div id="dealercards">
+				.---..---.</br>
+				|///||///|</br>
+				|///||///|</br>
+				|///||///|</br>
+				'---''---'
+			</div>
+			DEALER'S SCORE:<span id="dealerscore"></span></br>
+			YOUR CARDS:
+			<div id="playercards">
+				.---..---.</br>
+				|///||///|</br>
+				|///||///|</br>
+				|///||///|</br>
+				'---''---'
+			</div>
+			YOUR SCORE:<span id="playerscore"></span></br>
+			<button id="htbutton">Hit</button>
+			<button id="stbutton">Stand</button>
+			<button id="ddbutton">Double Down</button>
+			<div id="message"></div>
 		</div>
-		DEALER'S CARDS:
-		<div id="dealercards">
-			.---..---.</br>
-			|///||///|</br>
-			|///||///|</br>
-			|///||///|</br>
-			'---''---'
-		</div>
-		DEALER'S SCORE:<span id="dealerscore"></span></br>
-		YOUR CARDS:
-		<div id="playercards">
-			.---..---.</br>
-			|///||///|</br>
-			|///||///|</br>
-			|///||///|</br>
-			'---''---'
-		</div>
-		YOUR SCORE:<span id="playerscore"></span></br>
-		<button id="htbutton">Hit</button>
-		<button id="stbutton">Stand</button>
-		<button id="ddbutton">Double Down</button>
-		<div id="message"></div>
 		<script src="main.js"> </script>
 	</body>
 </html>
